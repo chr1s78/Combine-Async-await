@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADD20ED62807D1EC005C37C4 /* CombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD20ED52807D1EC005C37C4 /* CombineView.swift */; };
+		ADD20EDB2807D648005C37C4 /* CombineWithAsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD20EDA2807D648005C37C4 /* CombineWithAsyncView.swift */; };
+		ADD20EDE2807E3D0005C37C4 /* AsyncWithCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD20EDD2807E3D0005C37C4 /* AsyncWithCombineView.swift */; };
 		ADDBD2ED280698D20005921E /* CombineAsyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDBD2EC280698D20005921E /* CombineAsyncApp.swift */; };
 		ADDBD2EF280698D20005921E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDBD2EE280698D20005921E /* ContentView.swift */; };
 		ADDBD2F1280698D40005921E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDBD2F0280698D40005921E /* Assets.xcassets */; };
 		ADDBD2F4280698D40005921E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDBD2F3280698D40005921E /* Preview Assets.xcassets */; };
+		ADDBD2FC280699320005921E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDBD2FB280699320005921E /* NetworkService.swift */; };
+		ADDBD2FF280699730005921E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDBD2FE280699730005921E /* DataModel.swift */; };
+		ADDBD30528070B580005921E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDBD30428070B580005921E /* HomeView.swift */; };
+		ADDBD30728070B910005921E /* AsyncawaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDBD30628070B910005921E /* AsyncawaitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ADD20ED52807D1EC005C37C4 /* CombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineView.swift; sourceTree = "<group>"; };
+		ADD20EDA2807D648005C37C4 /* CombineWithAsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineWithAsyncView.swift; sourceTree = "<group>"; };
+		ADD20EDD2807E3D0005C37C4 /* AsyncWithCombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncWithCombineView.swift; sourceTree = "<group>"; };
 		ADDBD2E9280698D20005921E /* CombineAsync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineAsync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDBD2EC280698D20005921E /* CombineAsyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAsyncApp.swift; sourceTree = "<group>"; };
 		ADDBD2EE280698D20005921E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADDBD2F0280698D40005921E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADDBD2F3280698D40005921E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADDBD2FB280699320005921E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		ADDBD2FE280699730005921E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		ADDBD30428070B580005921E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ADDBD30628070B910005921E /* AsyncawaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncawaitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADD20ED42807D1E0005C37C4 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				ADD20ED52807D1EC005C37C4 /* CombineView.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		ADD20ED92807D619005C37C4 /* Combine Use Async await */ = {
+			isa = PBXGroup;
+			children = (
+				ADD20EDA2807D648005C37C4 /* CombineWithAsyncView.swift */,
+			);
+			path = "Combine Use Async await";
+			sourceTree = "<group>";
+		};
+		ADD20EDC2807E3B9005C37C4 /* Async Use Combine */ = {
+			isa = PBXGroup;
+			children = (
+				ADD20EDD2807E3D0005C37C4 /* AsyncWithCombineView.swift */,
+			);
+			path = "Async Use Combine";
+			sourceTree = "<group>";
+		};
 		ADDBD2E0280698D20005921E = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +89,13 @@
 		ADDBD2EB280698D20005921E /* CombineAsync */ = {
 			isa = PBXGroup;
 			children = (
+				ADD20EDC2807E3B9005C37C4 /* Async Use Combine */,
+				ADD20ED92807D619005C37C4 /* Combine Use Async await */,
+				ADD20ED42807D1E0005C37C4 /* Combine */,
+				ADDBD30C28070C270005921E /* Async await */,
+				ADDBD2FD280699670005921E /* Models */,
+				ADDBD2FA280699270005921E /* Services */,
+				ADDBD30428070B580005921E /* HomeView.swift */,
 				ADDBD2EC280698D20005921E /* CombineAsyncApp.swift */,
 				ADDBD2EE280698D20005921E /* ContentView.swift */,
 				ADDBD2F0280698D40005921E /* Assets.xcassets */,
@@ -65,6 +110,30 @@
 				ADDBD2F3280698D40005921E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADDBD2FA280699270005921E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ADDBD2FB280699320005921E /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ADDBD2FD280699670005921E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADDBD2FE280699730005921E /* DataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADDBD30C28070C270005921E /* Async await */ = {
+			isa = PBXGroup;
+			children = (
+				ADDBD30628070B910005921E /* AsyncawaitView.swift */,
+			);
+			path = "Async await";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADDBD2EF280698D20005921E /* ContentView.swift in Sources */,
+				ADDBD30728070B910005921E /* AsyncawaitView.swift in Sources */,
+				ADD20EDB2807D648005C37C4 /* CombineWithAsyncView.swift in Sources */,
+				ADD20ED62807D1EC005C37C4 /* CombineView.swift in Sources */,
+				ADDBD2FF280699730005921E /* DataModel.swift in Sources */,
+				ADD20EDE2807E3D0005C37C4 /* AsyncWithCombineView.swift in Sources */,
+				ADDBD30528070B580005921E /* HomeView.swift in Sources */,
+				ADDBD2FC280699320005921E /* NetworkService.swift in Sources */,
 				ADDBD2ED280698D20005921E /* CombineAsyncApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
